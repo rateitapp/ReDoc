@@ -14,7 +14,7 @@ export interface DropdownProps {
 }
 
 export const StyledDropdown = styled(Dropdown)`
-  min-width: 100px;
+  min-width: 200px;
   display: inline-block;
   position: relative;
   width: auto;
@@ -62,7 +62,7 @@ export const StyledDropdown = styled(Dropdown)`
   }
 
   .Dropdown-menu {
-    position: absolute;
+    position: relative;
     margin-top: 2px;
     left: 0;
     right: 0;
