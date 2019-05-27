@@ -1,4 +1,4 @@
-import Dropdown from 'react-dropdown';
+import Select from 'react-select';
 
 import styled from '../styled-components';
 
@@ -11,9 +11,11 @@ export interface DropdownProps {
   options: DropdownOption[];
   value: DropdownOption;
   onChange: (val: DropdownOption) => void;
+  menuPortalTarget?: HTMLElement;
+  menuPlacement?: string;
 }
 
-export const StyledDropdown = styled(Dropdown)`
+export const StyledDropdown = styled(Select)`
   min-width: 100px;
   display: inline-block;
   position: relative;
@@ -94,7 +96,7 @@ export const StyledDropdown = styled(Dropdown)`
   }
 `;
 
-export const SimpleDropdown = styled(StyledDropdown)`
+export const SimpleDropdown = styled(Select)`
   margin-left: 10px;
   text-transform: none;
   font-size: 0.929em;
